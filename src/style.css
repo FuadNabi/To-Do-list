@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display&family=Poppins:wght@200;300;400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.main-title-h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+input:placeholder-shown {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.main-cont {
+  background-color: white;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.69);
+  width: 90%;
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px rgb(88 86 86 / 30%) solid;
+  padding: 0 30px;
+}
+
+.input-cont {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px rgb(88 86 86 / 30%) solid;
+}
+
+.input-cont i {
+  margin-right: 35px;
+}
+
+.list-input {
+  padding: 20px 0 20px 30px;
+  outline: none;
+  border: none;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.list-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-body-ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.main-body-li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0 16px 25px;
+  border-bottom: 1px rgb(88 86 86 / 30%) solid;
+}
+
+.main-body-li i {
+  padding: 0 35px 0 0;
+}

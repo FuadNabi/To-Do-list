@@ -1,0 +1,19 @@
+const data = [
+  {
+    text: 'Go for a walk',
+    done: true,
+    id: 0,
+  },
+  {
+    text: 'Go to gym',
+    done: true,
+    id: 1,
+  },
+  {
+    text: 'Go to school',
+    done: true,
+    id: 2,
+  },
+];
+
+export default data;
