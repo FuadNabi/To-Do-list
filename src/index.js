@@ -1,5 +1,5 @@
 import * as base from './module/base.js';
-// import './style.css';
+import './style.css';
 
 const inputBtn = document.querySelector('.list-btn');
 const inputData = document.querySelector('.list-input');

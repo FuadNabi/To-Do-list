@@ -40,7 +40,7 @@ const removeData = (container) => {
 const modifyData = (container) => {
   container.addEventListener('click', (element) => {
     if (element.target.classList.contains('data-text')) {
-      const texts = e.target;
+      const texts = element.target;
       const data = texts.parentElement.parentElement.parentElement;
       data.classList.add('green-bg');
     }
@@ -48,7 +48,7 @@ const modifyData = (container) => {
 
   container.addEventListener('focusout', (element) => {
     if (element.target.classList.contains('data-text')) {
-      const texts = e.target;
+      const texts = element.target;
       const data = texts.parentElement.parentElement.parentElement;
       Modify.modify(data, texts);
       data.classList.remove('green-bg');

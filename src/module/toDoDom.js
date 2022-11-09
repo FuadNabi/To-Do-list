@@ -11,11 +11,11 @@ export default class toDoDom {
   static #addData = (data, container) => {
     const listHtml = `
     <li class="main-body-li" data-id="${data.id}">
-    <div>
-      <span><input type="checkbox" name="list-check" id="list-check" ${toDoDom.#datacheck(data.done)}></span>
-      <span class="main-body-text"><input type="text" value="${data.text}" class="data-text ${toDoDom.#datacheck(data.done)}" contenteditable="true"</span>
-    </div>
-    <i class="fa-solid fa-square-minus remove-btn"></i>
+      <div class="width">
+        <span><input type="checkbox" name="list-check" id="list-check" ${toDoDom.#datacheck(data.done)}></span>
+        <span class="main-body-text"><input type="text" value="${data.text}" class="data-text ${toDoDom.#datacheck(data.done)}" contenteditable="true"</span>
+      </div>
+      <i class="fa-solid fa-square-minus remove-btn"></i>
     </li>
     `;
 
@@ -36,8 +36,10 @@ export default class toDoDom {
       id: Date.now(),
     };
 
-    toDoDom.#addData(task, container);
-    toDoDom.#dataDownload(task);
+    if (texts !== '') {
+      toDoDom.#addData(task, container);
+      toDoDom.#dataDownload(task);
+    }
   }
 
   static datas = (container) => {

@@ -101,5 +101,16 @@ input:placeholder-shown {
 }
 
 .green-bg {
-  background-color: rgb(175, 240, 56);
+  background-color: rgb(236, 231, 149);
+}
+
+.data-text {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 80%;
+}
+
+.width {
+  width: 100%;
 }
