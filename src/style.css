@@ -99,3 +99,18 @@ input:placeholder-shown {
   color: gray;
   padding: 20px 0;
 }
+
+.green-bg {
+  background-color: rgb(236, 231, 149);
+}
+
+.data-text {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 80%;
+}
+
+.width {
+  width: 100%;
+}
