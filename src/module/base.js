@@ -1,6 +1,7 @@
 import toDoDom from './toDoDom.js';
 import Modify from './modify.js';
 import Remove from './remove.js';
+import Data from './data.js';
 
 const formClearing = (data) => {
   data.value = '';
@@ -56,12 +57,37 @@ const modifyData = (container) => {
   });
 };
 
-const loadData = (container) => {
-  document.addEventListener('DOMContentLoaded', () => {
-    toDoDom.datas(container);
+const checkBox = (container) => {
+  container.addEventListener('click', (element) => {
+    if (element.target.classList.contains('list-check')) {
+      const checkBoxAction = element.target;
+      const dataLi = checkBoxAction.parentElement.parentElement.parentElement;
+      const data = dataLi.querySelector('.data-text');
+      data.classList.toggle('text-dec');
+      Modify.doneCheck(dataLi);
+    }
   });
 };
 
+const loadData = (container) => {
+  document.addEventListener('DOMContentLoaded', () => {
+    toDoDom.datas(container);
+    checkBox(container);
+  });
+};
+
+const clearAllComplatedTasks = () => {
+  const completedTasks = Data.dataGet().filter((data) => data.done === true);
+  completedTasks.forEach((data) => {
+    const task = document.getElementById(data.id);
+    Remove.data(task);
+  });
+};
+
+const registerClearBtnListener = (btn) => {
+  btn.addEventListener('click', clearAllComplatedTasks);
+};
+
 export {
-  createData, removeData, modifyData, loadData, createDataByEnter,
+  createData, removeData, modifyData, loadData, createDataByEnter, registerClearBtnListener,
 };

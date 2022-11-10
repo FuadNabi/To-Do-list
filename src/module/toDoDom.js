@@ -3,17 +3,24 @@ import Data from './data.js';
 export default class toDoDom {
   static #datacheck = (done) => {
     if (done) {
-      return 'done';
+      return 'checked';
+    }
+    return '';
+  }
+
+  static #dataDone = (done) => {
+    if (done) {
+      return 'text-dec';
     }
     return '';
   }
 
   static #addData = (data, container) => {
     const listHtml = `
-    <li class="main-body-li" data-id="${data.id}">
+    <li class="main-body-li" id="${data.id}" data-id="${data.id}">
       <div class="width">
-        <span><input type="checkbox" name="list-check" id="list-check" ${toDoDom.#datacheck(data.done)}></span>
-        <span class="main-body-text"><input type="text" value="${data.text}" class="data-text ${toDoDom.#datacheck(data.done)}" contenteditable="true"</span>
+        <span><input type="checkbox" name="list-check" class="list-check" ${toDoDom.#datacheck(data.done)}></span>
+        <span class="main-body-text"><input type="text" value="${data.text}" class="data-text ${toDoDom.#dataDone(data.done)}" contenteditable="true"></span>
       </div>
       <i class="fa-solid fa-square-minus remove-btn"></i>
     </li>
