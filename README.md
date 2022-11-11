@@ -16,6 +16,10 @@ To get a local copy up and running follow these simple example steps.
 
 - You must have a code editor installed (VS code or Atom).
 
+### Live Demo
+
+- [Live link](https://fuadnabi.github.io/To-Do-list/dist/)
+
 ### Setup
 
 - git clone `git@github.com:FuadNabi/Awesome-Books.git`
