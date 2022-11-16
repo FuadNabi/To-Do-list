@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "webpack serve --open",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack"
   },
   "repository": {
@@ -20,13 +20,18 @@
   },
   "homepage": "https://github.com/FuadNabi/setup-and-mobile-first#readme",
   "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.3.1",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
     "hint": "^7.1.2",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
