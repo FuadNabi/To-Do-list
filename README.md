@@ -29,6 +29,9 @@ To get a local copy up and running follow these simple example steps.
 ## Author
 
 :bust_in_silhouette: **Author**
+  - Alelign Ayana
+  - Fuad Nabi
+
 
 - GitHub: [@githubhandle](https://github.com/FuadNabi)
 
