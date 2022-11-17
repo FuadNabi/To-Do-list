@@ -89,5 +89,11 @@ const registerClearBtnListener = (btn) => {
 };
 
 export {
-  createData, removeData, modifyData, loadData, createDataByEnter, registerClearBtnListener,
+  createData,
+  removeData,
+  modifyData,
+  loadData,
+  createDataByEnter,
+  registerClearBtnListener,
+  clearAllComplatedTasks,
 };
