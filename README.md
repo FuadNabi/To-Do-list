@@ -36,6 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@githubhandle](https://github.com/FuadNabi)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/fuad-nabiyev/)
+- Twitter: [Twitter](https://twitter.com/FuadNabiyev_)
 
 ## :handshake: Contributing
 
